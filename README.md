@@ -5,10 +5,14 @@ Here is a simple tool I've made with **JavaScript** and **Discogs' API** that le
 
 This web app use the first 50 items saved in user's Discogs collection then shuffle them to show you only one of them.
 
-#### Warning :
-To be used, this tool must need a ***Discogs' Username*** and the owner’s collection must be ***public*** !
+####  Warning :
 
-### Installation
+To be used, this tool must need this two conditions :
+
+ - [ ] ***Discogs' Username***
+ - [ ] The owner’s collection must be ***public*** 
+
+### Installation :
 - Open terminal, go to the root of a new folder and launch this command :  `git clone https://github.com/WesleyKln/VirtualMachineCreator.git .`
 - Open *index.html* from folder.
 - Follow the instructions.
