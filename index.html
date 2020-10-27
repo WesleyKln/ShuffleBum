@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ShuffleBum</title>
+</head>
+<body class="flex">
+    <main class="mainContent flex">
+        <div class="smartphone flex">
+            <div class="top">
+                <div class="title">
+                    <h2>Shufflebum</h2>
+                    <p>A simple tool that let you automatically find an album to listen to from your discogs collection (based on the first 50 items).</p>
+                </div>
+                <div class="usernameField">
+                    <div class="userField flex">
+                        <input type="text" name="username" class="userID" placeholder="Discogs' Username" autocomplete="off" autosuggest="off">
+                        <span class="usernameButton btn">Send</span>
+                    </div>
+                    <!--<span class="resetUserID btn not-active">Reset</span>-->
+                    <div class="welcome flex">
+                        <span class="hi"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="error404 not-active">
+                <h4 class="instructions">Be sure those two required rules are valid then try again by clicking on <span>Reset</span> button.</h4>
+                <li class="rule">The username must exist.</li>
+                <li class="rule">The username must exist.</li>
+            </div>
+            <div class="randomAlbum not-active flex">
+                <span class="vinyl"></span>
+                <span class="artistName"></span>
+                <span class="albumTitle"></span>
+             </div>
+            <div class="randomButton not-active">
+                <span class="randomAlbumBtn btn" onclick="fetchRandomAlbum()">Randomize</span>
+                <span class="resetUserID btn not-active">Reset</span>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

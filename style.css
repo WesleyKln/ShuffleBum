@@ -1,0 +1,260 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Animations */
+:root {
+  --ease-in-quad:       cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  --ease-in-cubic:      cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  --ease-in-quart:      cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  --ease-in-quint:      cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  --ease-in-expo:       cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  --ease-in-circ:       cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  --ease-out-quad:      cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-out-cubic:     cubic-bezier(0.215, 0.61, 0.355, 1);
+  --ease-out-quart:     cubic-bezier(0.165, 0.84, 0.44, 1);
+  --ease-out-quint:     cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-out-expo:      cubic-bezier(0.19, 1, 0.22, 1);
+  --ease-out-circ:      cubic-bezier(0.075, 0.82, 0.165, 1);
+  --ease-in-out-quad:   cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  --ease-in-out-cubic:  cubic-bezier(0.645, 0.045, 0.355, 1);
+  --ease-in-out-quart:  cubic-bezier(0.77, 0, 0.175, 1);
+  --ease-in-out-quint:  cubic-bezier(0.86, 0, 0.07, 1);
+  --ease-in-out-expo:   cubic-bezier(1, 0, 0, 1);
+  --ease-in-out-circ:   cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border: none;
+}
+button:focus {
+  outline: none;
+}
+
+/* Blur images when they have no alt attribute */
+img:not([alt]) {
+  filter: blur(10px);
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* CSS */
+.flex {
+    display: flex;
+}
+body, .mainContent {
+    justify-content: center;
+    align-items: center;
+}
+.mainContent {
+  background-image: url(img/bg.jpg) no-repeat cover;
+}
+.usernameField {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.title h2 {
+  text-transform: uppercase;
+  color: #34d9c3;
+  border-top: 1px solid #34d9c3;
+  border-bottom: 1px solid #34d9c3;
+  padding: 5px;
+  width: 70%;
+  margin: auto;
+}
+.title p {
+  font-style: italic;
+  margin: 10px 0;
+}
+.smartphone {
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-color: bisque;
+  width: 400px;
+  height: 800px;
+}
+.randomAlbum {
+  flex-flow: column;
+  color: #34d9c3;
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  filter: drop-shadow(1px 2px 3px black);
+  justify-content: center;
+  position: relative;
+  align-items: center;
+}
+.vinyl {
+  animation: infiniteRotate 10s linear infinite;
+  background: url(img/VinylBG.png);
+  width: 400px;
+  height: 400px;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+}
+.artistName {
+  font-size: 2.5rem;
+  width: 100%;
+  background: rgba(52,217,195,0.2);
+  color: bisque;
+}
+.albumTitle {
+  font-size: 2rem;
+  width: 100%;
+  background: rgba(52,217,195,0.2);
+  color: bisque;
+}
+.userField {
+  align-items: center;
+}
+.userField input::placeholder {
+  text-align: center;
+}
+.userID {
+  height: 50px;
+  -webkit-box-shadow: 5px 5px 5px #666666;
+  -moz-box-shadow: 5px 5px 5px #666666;
+  box-shadow: 5px 5px 5px #666666;
+  outline: none;
+}
+.userID:focus {
+  -webkit-box-shadow: 3px 3px 3px #666666;
+  -moz-box-shadow: 3px 3px 3px #666666;
+  box-shadow: 3px 3px 3px #666666;
+  border: 1px solid cadetblue;
+}
+.hi {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.hi span {
+  font-style: italic;
+  color: #34d9c3;
+  text-transform: uppercase;
+}
+span.resetUserID {
+  background: rgba(255, 0, 0, .6);
+  padding: 6px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.error404 {
+  padding: 20px;
+  margin: 10px;
+  border: 2px solid red;
+}
+.instructions span {
+  color: rgba(255, 0, 0, .6);
+  text-transform: uppercase;
+}
+.rule {
+  list-style: circle;
+  font-style: italic;
+}
+.btn {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  -webkit-box-shadow: 5px 5px 5px #666666;
+  -moz-box-shadow: 5px 5px 5px #666666;
+  box-shadow: 5px 5px 5px #666666;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px;
+  background: #34d9c3;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 10px;
+  text-align: center;
+  transition: .3s var(--ease-in-out-cubic);
+}
+
+.btn:hover {
+  box-shadow: 3px 3px 3px #666666;
+}
+.not-active {
+  display: none;
+}
+@keyframes infiniteRotate {  
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
