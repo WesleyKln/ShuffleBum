@@ -13,7 +13,7 @@ To be used, this tool must need this two conditions :
  - [ ] The owner’s collection must be ***public*** 
 
 ### Installation :
-- Open terminal, go to the root of a new folder and launch this command :  `git clone https://github.com/WesleyKln/VirtualMachineCreator.git .`
+- Open terminal, go to the root of a new folder and launch this command :  `git clone https://github.com/WesleyKln/ShuffleBum.git .`
 - Open *index.html* from folder.
 - Follow the instructions.
 
