@@ -129,9 +129,9 @@ body, .mainContent {
 }
 .title h2 {
   text-transform: uppercase;
-  color: #34d9c3;
-  border-top: 1px solid #34d9c3;
-  border-bottom: 1px solid #34d9c3;
+  color: #395D73;
+  border-top: 1px solid #395D73;
+  border-bottom: 1px solid #395D73;
   padding: 5px;
   width: 70%;
   margin: auto;
@@ -151,7 +151,7 @@ body, .mainContent {
 }
 .randomAlbum {
   flex-flow: column;
-  color: #34d9c3;
+  color: #395D73;
   width: 100%;
   text-align: center;
   font-size: 2rem;
@@ -172,13 +172,13 @@ body, .mainContent {
 .artistName {
   font-size: 2.5rem;
   width: 100%;
-  background: rgba(52,217,195,0.2);
+  background: rgba(57, 93, 115,0.3);
   color: bisque;
 }
 .albumTitle {
   font-size: 2rem;
   width: 100%;
-  background: rgba(52,217,195,0.2);
+  background: rgba(57, 93, 115,0.3);
   color: bisque;
 }
 .userField {
@@ -204,14 +204,26 @@ body, .mainContent {
   text-align: center;
   font-size: 1.5rem;
   font-weight: bold;
+  padding: 10px 20px;
 }
-.hi span {
+.hi .pseudo {
   font-style: italic;
-  color: #34d9c3;
+  color: #395D73;
   text-transform: uppercase;
 }
+.hi p {
+  border-top: 1px solid #395D73;
+  border-bottom: 1px solid #395D73;
+  font-size: 1.2rem;
+  padding: 10px;
+  font-weight: normal;
+  background: rgba(57, 93, 115,0.1);
+  text-transform: none;
+  color: #395D73;
+  font-style: italic;
+}
 span.resetUserID {
-  background: rgba(255, 0, 0, .6);
+  background: rgba(180, 106, 85, 1);
   padding: 6px;
   text-transform: uppercase;
   font-size: 1rem;
@@ -240,7 +252,7 @@ span.resetUserID {
   color: #ffffff;
   font-size: 20px;
   padding: 10px;
-  background: #34d9c3;
+  background: #395D73;
   text-decoration: none;
   cursor: pointer;
   margin: 10px;

@@ -12,7 +12,7 @@ usernameButton.addEventListener('click', () => {
         username = username.value;
         userField.classList.add('not-active');
         const hi = document.querySelector('.hi');
-        hi.innerHTML = `Hi <span>${username}</span>`;
+        hi.innerHTML = `Hi <span class="pseudo">${username}</span>. </br><p>Let me find your next listening by clicking on <span>Randomize</span> button.</p>`;
         resetUserID.classList.remove('not-active');
         randomButton.classList.remove('not-active');
 
@@ -37,7 +37,7 @@ const fetchRandomAlbum = async () => {
             randomAlbum.classList.remove('not-active');
             artistName.textContent = data.releases[randomNum].basic_information.artists[0].name;
             albumTitle.textContent = data.releases[randomNum].basic_information.title;
-            
+            console.log()
         });    
         
     } catch (error) {
