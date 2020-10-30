@@ -147,6 +147,7 @@ body, .mainContent {
   background-color: bisque;
   width: 400px;
   height: 800px;
+  border: 1px solid #395D73;
 }
 .randomAlbum {
   flex-flow: column;
@@ -159,6 +160,15 @@ body, .mainContent {
   position: relative;
   align-items: center;
 }
+.artistName, .albumTitle {
+  animation: scale 1.5s var(--ease-in-out-expo);
+}
+.vinylWrapper {
+  animation: scale 1s var(--ease-in-out-expo);
+  position: absolute;
+  height: 400px;
+  width: 400px;
+}
 .vinyl {
   animation: infiniteRotate 10s linear infinite;
   background: url(img/VinylBG.png);
@@ -167,11 +177,28 @@ body, .mainContent {
   background-size: cover;
   position: absolute;
   z-index: -1;
+  left: 0;
+}
+.loader {
+  position: absolute;
+  top: 50%;
+  margin-top: -8px;
+  left: 50%;
+  margin-left: -54px;
+  display: flex;
+}
+.dot {
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0 10px;
+  animation: loader 1s var(--ease-in-out-expo) infinite alternate;
 }
 .artistName {
   font-size: 2.5rem;
   width: 100%;
-  background: rgba(57, 93, 115,0.3);
+  background: rgba(57, 93, 115,0.4);
   color: bisque;
 }
 .albumTitle {
@@ -192,12 +219,15 @@ body, .mainContent {
   -moz-box-shadow: 5px 5px 5px #666666;
   box-shadow: 5px 5px 5px #666666;
   outline: none;
+  text-align: center;
+  color: #395D73;
+  font-weight: bold;
 }
 .userID:focus {
   -webkit-box-shadow: 3px 3px 3px #666666;
   -moz-box-shadow: 3px 3px 3px #666666;
   box-shadow: 3px 3px 3px #666666;
-  border: 1px solid cadetblue;
+  border: 1px solid #395D73;
 }
 .hi {
   text-align: center;
@@ -206,7 +236,6 @@ body, .mainContent {
   padding: 10px 20px;
 }
 .hi .pseudo {
-  text-transform: uppercase;
   font-weight: bold;
   border-bottom: 2px solid #395D73;
 }
@@ -223,13 +252,13 @@ body, .mainContent {
   font-style: italic;
 }
 .hi .first {
-  animation: slide 1s var(--ease-in-out-expo);
+  animation: scale 1s var(--ease-in-out-expo);
 }
 .hi .second {
-  animation: slide 4s var(--ease-in-out-expo);
+  animation: scale 4s var(--ease-in-out-expo);
 }
 .randomButton {
-  animation: slide 4s var(--ease-in-out-expo);
+  animation: scale 4s var(--ease-in-out-expo);
 }
 .error404 {
   animation: scale 1s var(--ease-in-out-expo);
@@ -277,17 +306,16 @@ span.resetUserID {
 }
 .not-active {
   display: none;
-  transition: all var(--ease-out-expo);
 }
 @keyframes infiniteRotate {  
   0% { -webkit-transform: rotate(0deg); }
   100% { -webkit-transform: rotate(360deg); }
 }
-@keyframes slide {
-  0% {transform: translateX(-25%);opacity: 0;}
-  100% {transform: translateX(0);opacity: 1;}
-}
 @keyframes scale {
   0% {transform: scale(0);opacity: 0;}
+  100% {transform: scale(1);opacity: 1;}
+}
+@keyframes loader {
+  0% {transform: scale(0.5);opacity: 0;}
   100% {transform: scale(1);opacity: 1;}
 }
