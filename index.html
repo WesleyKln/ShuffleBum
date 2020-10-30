@@ -12,7 +12,7 @@
             <div class="top">
                 <div class="title">
                     <h1>Shufflebum</h1>
-                    <p class="description">A simple tool that let you automatically find an album to listen to from your discogs collection (based on the first 50 items).</p>
+                    <p class="description">A simple tool that let you automatically find an album to listen to from your entire discogs collection.</p>
                 </div>
                 <div class="usernameField">
                     <div class="userField flex">
@@ -31,12 +31,19 @@
                 <li class="rule">The owner’s collection must be public.</li>
             </div>
             <div class="randomAlbum not-active flex">
-                <span class="vinyl"></span>
-                <span class="artistName"></span>
-                <span class="albumTitle"></span>
+                <div class="vinylWrapper">
+                    <div class="loader not-active">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <span class="vinyl not-active"></span>
+                </div>
+                <span class="artistName not-active"></span>
+                <span class="albumTitle not-active"></span>
             </div>
             <div class="randomButton not-active">
-                <span class="randomAlbumBtn btn" onclick="fetchRandomAlbum()">Randomize</span>
+                <span class="randomAlbumBtn btn">Randomize</span>
                 <span class="resetUserID btn not-active">Reset</span>
             </div>
         </div>
