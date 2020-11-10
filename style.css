@@ -179,22 +179,6 @@ body, .mainContent {
   z-index: -1;
   left: 0;
 }
-.loader {
-  position: absolute;
-  top: 50%;
-  margin-top: -8px;
-  left: 50%;
-  margin-left: -54px;
-  display: flex;
-}
-.dot {
-  width: 16px;
-  height: 16px;
-  background-color: white;
-  border-radius: 50%;
-  margin: 0 10px;
-  animation: loader 1s var(--ease-in-out-expo) infinite alternate;
-}
 .artistName {
   font-size: 2.5rem;
   width: 100%;
@@ -260,7 +244,7 @@ body, .mainContent {
 .randomButton {
   animation: scale 4s var(--ease-in-out-expo);
 }
-.error404 {
+.error404, .errorEmpty {
   animation: scale 1s var(--ease-in-out-expo);
 }
 span.resetUserID {
@@ -270,7 +254,7 @@ span.resetUserID {
   font-size: 1rem;
   font-weight: bold;
 }
-.error404 {
+.error404, .errorEmpty {
   padding: 20px;
   margin: 10px;
   border: 2px solid red;
@@ -313,9 +297,5 @@ span.resetUserID {
 }
 @keyframes scale {
   0% {transform: scale(0);opacity: 0;}
-  100% {transform: scale(1);opacity: 1;}
-}
-@keyframes loader {
-  0% {transform: scale(0.5);opacity: 0;}
   100% {transform: scale(1);opacity: 1;}
 }
