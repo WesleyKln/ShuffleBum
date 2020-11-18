@@ -21,4 +21,5 @@ To be used, this tool must need this two conditions :
 - Open *index.html* from folder.
 - Follow the in-app's instructions.
 
+### Try it online !
 Have fun with [**ShuffleBum**](https://wesleykln.github.io/ShuffleBum/) !
