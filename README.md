@@ -6,6 +6,8 @@ Here is a simple tool I've made with **JavaScript** and **Discogs' API** that le
 
 This web app use the entire records saved in user's Discogs collection then shuffle them to show you only one of them. **ShuffleBum** start to retrieve data from the user's collection from the first click to ensure retrieving data as fast as possible. And so, user can ask to **ShuffleBum** a random album really quickly (when the random button from the app is up).
 
+Here is the [demo](https://wesleykln.github.io/ShuffleBum/).
+
 ---
 ####  Warning :
 
@@ -19,4 +21,4 @@ To be used, this tool must need this two conditions :
 - Open *index.html* from folder.
 - Follow the in-app's instructions.
 
-Have fun with **ShuffleBum** !
+Have fun with [**ShuffleBum**](https://wesleykln.github.io/ShuffleBum/) !
