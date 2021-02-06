@@ -15,6 +15,8 @@ To be used, this tool must need this two conditions :
 
  - [ ] ***Discogs' Username*** with at least 1 item in his collection
  - [ ] The owner’s collection must be ***public*** 
+ 
+ > You can use my discogs' username in order to try ShuffleBum => ***WesleyKln***
 
 ### Installation :
 - Open terminal, go to the root of a new folder and launch this command :  `git clone https://github.com/WesleyKln/ShuffleBum.git .`
@@ -23,3 +25,6 @@ To be used, this tool must need this two conditions :
 
 ### Try it online :
 Have fun with [**ShuffleBum**](https://wesleykln.github.io/ShuffleBum/) !
+
+### TODO :
+Convert this app into React.
